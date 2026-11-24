@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="نملية — Namliyah | موقع تجريبي لمطعم شامي عاصر في جدة.">
+  <title>نملية — Namliyah | الصفحة الرئيسية</title>
+
+  <!-- خط أميري المحلي -->
+  <link rel="preload" href="Amiri-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <!-- ملف التنسيقات -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="home">
+
+  <!-- شريط التنقل — علوي على الكمبيوتر / سفلي على الجوال -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="نملية — الصفحة الرئيسية">
+        <span class="brand-ar">نملية</span>
+        <span class="brand-en">Namliyah</span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a class="nav-link active" href="index.html" data-nav="home" aria-current="page">
+          <svg class="nav-ico" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/>
+          </svg>
+          <span>الرئيسية</span>
+        </a>
+        <a class="nav-link" href="menu.html" data-nav="menu">
+          <svg class="nav-ico" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h10"/>
+          </svg>
+          <span>القائمة</span>
+        </a>
+        <a class="nav-link" href="order.html" data-nav="order">
+          <svg class="nav-ico" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+          </svg>
+          <span>اطلب الآن</span>
+        </a>
+        <a class="nav-link" href="reservation.html" data-nav="reservation">
+          <svg class="nav-ico" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/>
+          </svg>
+          <span>احجز طاولتك</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- شعار الجوال أعلى الشاشة (يظهر فقط على الجوال) -->
+  <div class="mobile-brand">
+    <a class="brand" href="index.html" aria-label="نملية — الصفحة الرئيسية">
+      <span class="brand-ar">نملية</span>
+      <span class="brand-en">Namliyah</span>
+    </a>
+  </div>
+
+  <main>
+    <!-- ============ 1) القسم الرئيسي Hero ============ -->
+    <section class="hero">
+      <div class="container hero-grid hero-no-media">
+        <div class="hero-text reveal">
+          <p class="eyebrow">مطعم شامي عاصر &middot; جدة</p>
+          <h1 class="hero-title">نملية</h1>
+          <p class="hero-en">Namliyah</p>
+          <p class="hero-welcome">
+            أهلاً بك في نملية، حيث تلتقي نكهات الشام الأصيلة بلمسة عصرية دافئة في أجواء فاخرة هادئة.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-ghost" href="menu.html">استكشف القائمة</a>
+            <a class="btn btn-outline" href="reservation.html">احجز طاولتك</a>
+            <a class="btn btn-primary" href="order.html">اطلب الآن</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 1.1) بكجات نملية — قسم ترويجي مختصر ============ -->
+    <section class="section combo-promo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">بكجات نملية</p>
+          <h2 class="section-title">وجبة كاملة في بكج واحد</h2>
+          <p class="section-en">Namliyah Combos</p>
+        </div>
+        <!-- تُملأ البطاقات تلقائيًا من js/combos-data.js -->
+        <div class="combo-promo-grid" id="comboPromoGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ 2) نبذة عن المطعم ============ -->
+    <section class="section about" id="about">
+      <div class="container about-grid about-no-media">
+        <div class="about-text reveal">
+          <p class="eyebrow">نبذة عن المطعم</p>
+          <h2 class="section-title">نملية</h2>
+          <p class="section-en">About Namliyah</p>
+          <p>
+            نملية مفهوم تجريبي لمطعم شامي معاصر يقدّم تجربة طعام تقوم على المكوّنات الطازجة،
+            والأجواء الدافئة، والتفاصيل الفاخرة الهادئة. يجمع المكان بين أصالة المطبخ الشامي
+            وروح التصميم الحديث.
+          </p>
+          <p>
+            هذا الموقع مشروع تجريبي لأغراض العرض والتعليم، ولا يمثّل الموقع الرسمي للمطعم.
+          </p>
+          <a class="btn btn-outline" href="menu.html">تصفّح القائمة</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4) أطباق مميزة ============ -->
+    <section class="section featured">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">أطباق مميزة</p>
+          <h2 class="section-title">من المطبخ</h2>
+          <p class="section-en">Signature Dishes</p>
+          <p class="section-lead">مختارات يعرضها المشروع من قائمة الطعام.</p>
+        </div>
+
+        <!-- تُملأ هذه المنطقة تلقائيًا من js/menu-data.js -->
+        <div class="cards-grid" id="featuredGrid"></div>
+
+        <!-- رسالة تظهر عندما تكون القائمة فارغة -->
+        <div class="empty-state" id="featuredEmpty">
+          <div class="empty-ico" aria-hidden="true">ن</div>
+          <h3>أطباق مميزة قيد الإضافة</h3>
+          <p>سيتم عرض الأطباق المختارة هنا بعد توفير بيانات القائمة.</p>
+          <a class="btn btn-outline" href="menu.html">الانتقال إلى القائمة</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5) دعوات الإجراء ============ -->
+    <section class="section cta">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">ماذا تريد أن تفعل اليوم؟</p>
+          <h2 class="section-title">ابدأ من هنا</h2>
+          <p class="section-en">Get Started</p>
+        </div>
+
+        <div class="cta-grid">
+          <a class="cta-card reveal" href="menu.html">
+            <span class="cta-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            </span>
+            <span class="cta-body">
+              <h3>استكشف القائمة</h3>
+              <p>تعرّف على فئات الطعام والأصناف المتاحة.</p>
+            </span>
+            <span class="cta-arrow" aria-hidden="true">&larr;</span>
+          </a>
+
+          <a class="cta-card reveal" href="reservation.html">
+            <span class="cta-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>
+            </span>
+            <span class="cta-body">
+              <h3>احجز طاولتك</h3>
+              <p>اختر التاريخ والوقت والطاولة المناسبة لك.</p>
+            </span>
+            <span class="cta-arrow" aria-hidden="true">&larr;</span>
+          </a>
+
+          <a class="cta-card reveal" href="order.html">
+            <span class="cta-ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            </span>
+            <span class="cta-body">
+              <h3>اطلب الآن</h3>
+              <p>أضف أصنافك إلى السلة وأكّد طلبك للاستلام.</p>
+            </span>
+            <span class="cta-arrow" aria-hidden="true">&larr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ التذييل ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a class="brand" href="index.html" aria-label="نملية — الصفحة الرئيسية">
+          <span class="brand-ar">نملية</span>
+          <span class="brand-en">Namliyah</span>
+        </a>
+        <p class="footer-note">مفهوم تجريبي لمطعم شامي عاصر في جدة.</p>
+        <p class="footer-disclaimer">
+          موقع تجريبي لمشروع جامعي — جميع المعلومات والأسعار لأغراض العرض فقط.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-title">معلومات التواصل</h3>
+        <address class="footer-address">
+          حي الزهراء، شارع البترجي،<br>
+          جدة، المملكة العربية السعودية
+        </address>
+        <p class="footer-hours">
+          ساعات العمل: يوميًا من 5:30 مساءً إلى 3:00 صباحًا
+          <span class="tag">معلومة مرجعية</span>
+        </p>
+
+        <!-- TODO: استبدل قيمة href أدناه برابط Google Maps الرسمي للمطعم -->
+        <a class="footer-link" href="#" data-placeholder="maps" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/>
+          </svg>
+          موقعنا على الخريطة
+        </a>
+
+        <!-- TODO: استبدل قيمة href أدناه برابط حساب Instagram الرسمي -->
+        <a class="footer-link" href="#" data-placeholder="instagram" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.2" fill="currentColor" stroke="none"/>
+          </svg>
+          Instagram
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-title">روابط الموقع</h3>
+        <nav class="footer-nav" aria-label="روابط التذييل">
+          <a href="index.html">الرئيسية</a>
+          <a href="menu.html">القائمة</a>
+          <a href="order.html">اطلب الآن</a>
+          <a href="reservation.html">احجز طاولتك</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>نملية &mdash; Namliyah &copy; <span id="year">2026</span> &mdash; موقع تجريبي.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر العودة إلى الأعلى -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة إلى الأعلى" title="العودة إلى الأعلى">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></svg>
+  </button>
+
+  <!-- حاوية رسائل Toast -->
+  <div class="toast-wrap" id="toastWrap" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="js/image-meta.js"></script>
+  <script src="js/menu-data.js"></script>
+  <script src="js/combos-data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
